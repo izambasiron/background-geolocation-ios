@@ -75,11 +75,11 @@ FMDBLogger *sqliteLogger;
     [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:DDLogLevelDebug];
     
     sqliteLogger = [[FMDBLogger alloc] initWithLogDirectory:[self loggerDirectory]];
-    sqliteLogger.saveThreshold     = 1;
-    sqliteLogger.saveInterval      = 0;
-    sqliteLogger.maxAge            = 60 * 60 * 24 * 7; //  7 days
-    sqliteLogger.deleteInterval    = 60 * 60 * 24;     //  1 day
-    sqliteLogger.deleteOnEverySave = NO;
+    // sqliteLogger.saveThreshold     = 1;
+    // sqliteLogger.saveInterval      = 0;
+    // sqliteLogger.maxAge            = 60 * 60 * 24 * 7; //  7 days
+    // sqliteLogger.deleteInterval    = 60 * 60 * 24;     //  1 day
+    // sqliteLogger.deleteOnEverySave = NO;
     
     [DDLog addLogger:sqliteLogger withLevel:DDLogLevelDebug];
     
